@@ -1,5 +1,5 @@
-import {loadScene} from './loader.js';
-import {scene} from './loader.js';
+//import {loadScene} from './loader.js';
+//import {scene} from './loader.js';
 
 
 let ScreenX = 1000;
