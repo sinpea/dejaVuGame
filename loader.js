@@ -3,7 +3,7 @@ const scenes =
     [{
         sceneIndex:"0",
         sceneBgPath:"./assets/bg0.png",
-        choiceBoxes:{a:{x1:"120",y1:"140",x2:"120",y2:"140"},b:{x1:"120",y1:"140",x2:"120",y2:"140"}},
+        choiceBoxes:{a:{x1:"120",y1:"140",x2:"180",y2:"190"},b:{x1:"240",y1:"140",x2:"300",y2:"190"}},
         choiceTexts:{a:"Brush",b:"Don't Brush"},
         textPrompt:"You just woke up prettyface, wanna go brush your teeth eh?"
     }];
