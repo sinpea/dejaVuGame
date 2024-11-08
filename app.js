@@ -48,6 +48,7 @@ function sceneManager()
     let choice = clickManager(MouseX,MouseY,choiceCoordinateArr);
 
     //Todo: Write logic behind scene management
+    console.log(choice.choiceMade)
     if(choice.choiceMade)
     {
         loadScene(SceneIndex);
@@ -58,6 +59,7 @@ function clickManager(x,y,choiceCoords)
     //csll function after DOM click is detected
     c = Object.create(choicer);
     console.log("X:" + x + "Y:" + y);
+
     for(let i = 0;i < choiceCoords.length;i++)
     {
         //check if x,y is inside any of these coordinates
@@ -112,5 +114,10 @@ function gameStart()
     console.log("SEX");
     drawBgScene("assets/startScreen.png");
     drawTextBox("Deja Vu v1.0.0      CLICK ON CANVAS TO CONTINUE",40);
+    choiceCoordinateArr[0].corner1.x = 0;
+    choiceCoordinateArr[1].corner2.x = 1000;
+
+    choiceCoordinateArr[0].corner1.y = 0;
+    choiceCoordinateArr[1].corner2.y = 1000;
 }
 

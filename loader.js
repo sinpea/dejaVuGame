@@ -12,7 +12,7 @@ function loadScene(index)
 {
     //let scene = JSON.parse(scenes[index]);
     drawBgScene(scenes[index].sceneBgPath);
-    drawTextBox(scenes[index].textPrompt + "           " +scenes[index].choiceTexts.a + " , "+scenes[index].choiceTexts.b);
+    drawTextBox(scenes[index].textPrompt + "           " +scenes[index].choiceTexts.a + " , "+scenes[index].choiceTexts.b,48);
 
     choiceCoordinateArr[0].corner1.x = scenes[index].choiceBoxes.a.x1;
     choiceCoordinateArr[1].corner2.x = scenes[index].choiceBoxes.b.x2;
