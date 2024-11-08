@@ -1,4 +1,4 @@
-import scenes from "./scenes.json" assert { type: "json" };
+import scenes from "./scenes.json" with { type: "json" };
 export const scene = JSON.parse(scenes);
 export function loadScene(index)
 {
