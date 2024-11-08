@@ -5,7 +5,8 @@ const scenes =
         sceneBgPath:"./assets/bg0.png",
         choiceBoxes:{a:{x1:"120",y1:"140",x2:"180",y2:"190"},b:{x1:"240",y1:"140",x2:"300",y2:"190"}},
         choiceTexts:{a:"Brush",b:"Don't Brush"},
-        textPrompt:"You just woke up prettyface, wanna go brush your teeth eh?"
+        textPrompt:"You just woke up prettyface, wanna go brush your teeth eh?",
+        hasButton:true
     }];
 
 function loadScene(index)
@@ -13,7 +14,10 @@ function loadScene(index)
     //let scene = JSON.parse(scenes[index]);
     drawBgScene(scenes[index].sceneBgPath);
     drawTextBox(scenes[index].textPrompt + "           " +scenes[index].choiceTexts.a + " , "+scenes[index].choiceTexts.b,48);
-
+    if(scenes[index].hasButton)
+    {
+        drawButton(index);
+    }
     choiceCoordinateArr[0].corner1.x = scenes[index].choiceBoxes.a.x1;
     choiceCoordinateArr[1].corner2.x = scenes[index].choiceBoxes.b.x2;
 
