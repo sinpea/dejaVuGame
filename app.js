@@ -134,13 +134,13 @@ function drawButton(index)
     ctx.fillRect(scenes[index].choiceBoxes.a.x1,scenes[index].choiceBoxes.a.y1,scenes[index].choiceBoxes.a.x2-scenes[index].choiceBoxes.a.x1,scenes[index].choiceBoxes.a.y2-scenes[index].choiceBoxes.a.y1);
     
     ctx.fillStyle = "White";
-    ctx.fillText(scenes[index].choiceTexts.a,scenes[index].choiceBoxes.a.x1,scenes[index].choiceBoxes.a.y1+(scenes[index].choiceBoxes.a.y2-scenes[index].choiceBoxes.a.y1)/2);
+    ctx.fillText(scenes[index].choiceTexts.a,scenes[index].choiceBoxes.a.x1,scenes[index].choiceBoxes.a.y1+(scenes[index].choiceBoxes.a.y2-scenes[index].choiceBoxes.a.y1)/4);
     
     ctx.fillStyle = "Black";
     ctx.fillRect(scenes[index].choiceBoxes.b.x1,scenes[index].choiceBoxes.b.y1,scenes[index].choiceBoxes.b.x2-scenes[index].choiceBoxes.b.x1,scenes[index].choiceBoxes.b.y2-scenes[index].choiceBoxes.b.y1);
 
     ctx.fillStyle = "White";
-    ctx.fillText(scenes[index].choiceTexts.b,scenes[index].choiceBoxes.b.x1,scenes[index].choiceBoxes.b.y1+(scenes[index].choiceBoxes.b.y2-scenes[index].choiceBoxes.b.y1)/2);
+    ctx.fillText(scenes[index].choiceTexts.b,scenes[index].choiceBoxes.b.x1,scenes[index].choiceBoxes.b.y1+(scenes[index].choiceBoxes.b.y2-scenes[index].choiceBoxes.b.y1)/4);
     
 }
 
