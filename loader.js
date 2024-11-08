@@ -1,5 +1,5 @@
 //import scenes from "./scenes.json" with { type: "json" };
-export const scenes =
+const scenes =
     [{
         "sceneIndex":"0",
         "sceneBgPath":"./assets/bg0.png",
@@ -8,7 +8,7 @@ export const scenes =
         "textPrompt":"You just woke up prettyface, wanna go brush your teeth eh?"
     }];
 
-export function loadScene(index)
+function loadScene(index)
 {
     let scene = JSON.parse(scenes[index]);
     drawBgScene(scene[index].sceneBgPath);
