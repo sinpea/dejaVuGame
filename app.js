@@ -8,6 +8,19 @@ let SceneIndex = 0;
 let MouseX = 0;
 let MouseY = 0;
 
+const choicer =
+{
+    choiceMade: false,
+    option: 0
+};
+const choiceCoordinates = 
+{
+    //corner1:Object.create(vectorField),
+    //corner2:Object.create(vectorField)
+    corner1:{x:0,y:0},
+    corner2:{x:0,y:0}
+};
+
 //let ScenePath = "assets/";
 let choiceCoordinateArr = [Object.create(choiceCoordinates),Object.create(choiceCoordinates)];
 
@@ -25,18 +38,6 @@ function mousePosManage(event)
 //
 //    x:0,y:0
 //};
-const choicer =
-{
-    choiceMade: false,
-    option: 0
-};
-const choiceCoordinates = 
-{
-    //corner1:Object.create(vectorField),
-    //corner2:Object.create(vectorField)
-    corner1:{x:0,y:0},
-    corner2:{x:0,y:0}
-};
 
 
 function sceneManager()
