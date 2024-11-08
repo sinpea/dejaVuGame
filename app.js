@@ -47,13 +47,16 @@ function sceneManager()
     let choice = clickManager(MouseX,MouseY,choiceCoordinateArr);
 
     //Todo: Write logic behind scene management
-    loadScene(SceneIndex);
-
+    if(choice.choiceMade)
+    {
+        loadScene(SceneIndex);
+    }
 }
 function clickManager(x,y,choiceCoords)
 {
     //csll function after DOM click is detected
     c = Object.create(choicer);
+    console.log("X:" + x + "Y:" + y);
     for(let i = 0;i < choiceCoords.length;i++)
     {
         //check if x,y is inside any of these coordinates
