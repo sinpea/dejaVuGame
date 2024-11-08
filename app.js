@@ -141,7 +141,7 @@ function drawButton(index)
 
     ctx.fillStyle = "White";
     ctx.fillText(scenes[index].choiceTexts.b,scenes[index].choiceBoxes.b.x1,scenes[index].choiceBoxes.b.y1+(scenes[index].choiceBoxes.b.y2-scenes[index].choiceBoxes.b.y1)/4);
-    
+    //bibib
 }
 
 //Todo: Make game scene dummy files
