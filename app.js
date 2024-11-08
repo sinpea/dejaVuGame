@@ -29,8 +29,8 @@ function mousePosManage(event)
 {
     MouseX = event.clientX;
     MouseY = event.clientY;
-    console.log(MouseX);
-    console.log(MouseY);
+    //console.log(MouseX);
+    //console.log(MouseY);
 
 }
 //to do lator: Create Json to store scene data....manage scenes and stuff.. incorporate funvyiond msfr till nowWs
